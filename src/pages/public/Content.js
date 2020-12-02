@@ -89,11 +89,11 @@ const Content = () => {
 					</ol>
 				</nav>
 
-				{(segment && !article) && <Segment>
+				{(segment && !articleItem) && <Segment>
 					<Articles segment={segmentItem} />
 				</Segment>}
 				{(segment && articleItem) && <Segment>
-					<Articles article={articleItem} />
+					<Article article={articleItem} />
 				</Segment>}
 			</div>
 

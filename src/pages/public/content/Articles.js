@@ -5,7 +5,7 @@ import ArticleItem from './components/ArticleItem'
 
 const Articles = ({ segment }) => {
 	const location = useLocation()
-
+	if (!segment) return null
 	const baseTo = location.pathname
 	return <div>
 		<h3>{segment.name}</h3>
